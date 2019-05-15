@@ -1,0 +1,16 @@
+def sum67(nums):
+  sum = 0
+  six = find_num(6,nums)
+  seven = find_num(7,nums)
+  for i in range(len(nums)):
+    if i >=six and i <=seven:
+      continue
+    sum += nums[i]
+  return sum
+
+
+def find_num(num, nums):
+  for i in range(len(nums)):
+    if nums[i] == num:
+      return i
+      
